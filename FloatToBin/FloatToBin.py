@@ -2,11 +2,14 @@ import sys
 argv = sys.argv[1:]
 
 def float_to_bin(number):
+   
     # seperates intger part and decimal part
     int_part, dec_part = str(number).split(".")
     
     # Convert the two parts from string to integer
     int_part = int(int_part)
+
+    
     dec_part = int(dec_part)
     
     # Convert intger part to binary
@@ -35,6 +38,6 @@ for line in lines:
         numbers = line.split()
         
         for i in numbers:
-            output_file.write(float_to_bin(float(i)))
+            output_file.write( float_to_bin( "{:.20f}".format(float(i)) ) )
             output_file.write('\n')
 
