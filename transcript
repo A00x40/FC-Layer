@@ -1,0 +1,113 @@
+# Loading project FC
+do do-files/test_bench.do
+# vsim work.test_bench 
+# Start time: 01:51:38 on May 27,2021
+# Loading work.test_bench
+# Loading work.file_handler
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+add wave -position insertpoint  \
+sim:/test_bench/clk \
+sim:/test_bench/captured_data
+force -freeze sim:/test_bench/clk 1 0, 0 {50 ps} -r 100
+
+run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 29
+step
+run -continue
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 38
+run -continue
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 40
+run -continue
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 41
+run -continue
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 42
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 40
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 41
+run
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 42
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 40
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 41
+run
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 42
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 40
+run
+# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 41
+run
+quit -sim
+# End time: 01:58:48 on May 27,2021, Elapsed time: 0:07:10
+# Errors: 0, Warnings: 2
+# Compile of file_handler.v was successful.
+# Compile of ram.v was successful.
+# Compile of test_bench.v was successful.
+# 3 compiles, 0 failed with no errors.
+do do-files/test_bench.do
+# vsim work.test_bench 
+# Start time: 01:59:09 on May 27,2021
+# Loading work.test_bench
+# Loading work.file_handler
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 02:00:34 on May 27,2021, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 1
+# Compile of file_handler.v was successful.
+# Compile of ram.v was successful.
+# Compile of test_bench.v was successful.
+# 3 compiles, 0 failed with no errors.
+do do-files/test_bench.do
+# vsim work.test_bench 
+# Start time: 02:00:58 on May 27,2021
+# Loading work.test_bench
+# Loading work.file_handler
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+run
+run
+quit -sim
+# End time: 02:01:43 on May 27,2021, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 1
+# Compile of test_bench.v was successful.
+do do-files/test_bench.do
+# vsim work.test_bench 
+# Start time: 02:05:15 on May 27,2021
+# Loading work.test_bench
+# Loading work.file_handler
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
