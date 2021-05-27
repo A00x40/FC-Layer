@@ -1,15 +1,8 @@
-/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/ram.v {1 {vlog -work work -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/ram.v
+/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v {1 {vlog -work work -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module DMA
+-- Compiling module test_bench
 
 Top level modules:
-	DMA
-
-} {} {}} /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/file_handler.v {1 {vlog -work work -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/file_handler.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module file_handler
-
-Top level modules:
-	file_handler
+	test_bench
 
 } {} {}}
