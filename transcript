@@ -1,42 +1,172 @@
 # Loading project FC
-# Load canceled
+# Compile of max_test_bench.sv failed with 1 errors.
+# Compile of max_test_bench.sv was successful with warnings.
+# Compile of max_test_bench.sv was successful.
 do do-files/max.do
-# vsim work.max 
-# Start time: 23:49:12 on Jun 10,2021
-# Loading sv_std.std
-# Loading work.max
-force -freeze {sim:/max/outing2[9]} 4'h000a 0
+# vsim work.max_test_bench 
+# Start time: 00:22:58 on Jun 11,2021
+# ** Error: (vsim-3170) Could not find 'max_test_bench'.
+#         Searched libraries:
+#             /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./do-files/max.do PAUSED at line 1
 do do-files/max.do
-# End time: 23:51:26 on Jun 10,2021, Elapsed time: 0:02:14
-# Errors: 0, Warnings: 0
-# vsim work.max 
-# Start time: 23:51:26 on Jun 10,2021
+# vsim work.max_test_bench 
+# Start time: 00:22:58 on Jun 11,2021
+# ** Error: (vsim-3170) Could not find 'max_test_bench'.
+#         Searched libraries:
+#             /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./do-files/max.do PAUSED at line 1
+# Compile of max_test_bench.sv was successful.
+do do-files/max.do
+# vsim work.max_test_bench 
+# Start time: 00:22:58 on Jun 11,2021
 # Loading sv_std.std
+# Loading work.max_test_bench
+# ** Error: (vsim-3033) /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(9): Instantiation of 'maxTest' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /max_test_bench File: /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv
+#         Searched libraries:
+#             /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./do-files/max.do PAUSED at line 1
+# Compile of max_test_bench.sv was successful.
+do do-files/max.do
+# vsim work.max_test_bench 
+# Start time: 00:22:58 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
 # Loading work.max
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(25)
+#    Time: 200 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 25
+quit -sim
+# End time: 00:28:58 on Jun 11,2021, Elapsed time: 0:06:00
+# Errors: 3, Warnings: 1
+# Compile of test_bench.v was successful.
+# Compile of FC.sv was successful.
+# Compile of FC1.sv was successful.
+# Compile of FC2.sv was successful.
+# Compile of Max.sv was successful.
+# Compile of max_test_bench.sv was successful.
+# 6 compiles, 0 failed with no errors.
 do do-files/max.do
-# End time: 23:51:57 on Jun 10,2021, Elapsed time: 0:00:31
+# vsim work.max_test_bench 
+# Start time: 00:29:06 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(25)
+#    Time: 200 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 25
+quit -sim
+# End time: 00:29:35 on Jun 11,2021, Elapsed time: 0:00:29
 # Errors: 0, Warnings: 1
-# vsim work.max 
-# Start time: 23:51:57 on Jun 10,2021
-# Loading sv_std.std
-# Loading work.max
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 do do-files/max.do
-# End time: 23:52:47 on Jun 10,2021, Elapsed time: 0:00:50
-# Errors: 0, Warnings: 1
-# vsim work.max 
-# Start time: 23:52:47 on Jun 10,2021
+# vsim work.max_test_bench 
+# Start time: 00:30:11 on Jun 11,2021
 # Loading sv_std.std
+# Loading work.max_test_bench
 # Loading work.max
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(25)
+#    Time: 200 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 25
+quit -sim
+# End time: 00:31:38 on Jun 11,2021, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 1
+# Compile of test_bench.v was successful.
+# Compile of FC.sv was successful.
+# Compile of FC1.sv was successful.
+# Compile of FC2.sv was successful.
+# Compile of Max.sv was successful.
+# Compile of max_test_bench.sv was successful.
+# 6 compiles, 0 failed with no errors.
 do do-files/max.do
-# End time: 23:53:17 on Jun 10,2021, Elapsed time: 0:00:30
-# Errors: 0, Warnings: 1
-# vsim work.max 
-# Start time: 23:53:17 on Jun 10,2021
+# vsim work.max_test_bench 
+# Start time: 00:31:48 on Jun 11,2021
 # Loading sv_std.std
+# Loading work.max_test_bench
 # Loading work.max
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# End time: 23:56:25 on Jun 10,2021, Elapsed time: 0:03:08
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(25)
+#    Time: 200 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 25
+do do-files/max.do
+# End time: 00:32:22 on Jun 11,2021, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 1
+# vsim work.max_test_bench 
+# Start time: 00:32:22 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(25)
+#    Time: 200 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 25
+quit -sim
+# End time: 00:32:40 on Jun 11,2021, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 1
+# Compile of test_bench.v was successful.
+# Compile of FC.sv was successful.
+# Compile of FC1.sv was successful.
+# Compile of FC2.sv was successful.
+# Compile of Max.sv was successful.
+# Compile of max_test_bench.sv was successful.
+# 6 compiles, 0 failed with no errors.
+do do-files/max.do
+# vsim work.max_test_bench 
+# Start time: 00:32:52 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(27)
+#    Time: 300 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 27
+do do-files/max.do
+# End time: 00:34:00 on Jun 11,2021, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 1
+# vsim work.max_test_bench 
+# Start time: 00:34:00 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(27)
+#    Time: 300 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 27
+do do-files/max.do
+# End time: 00:34:44 on Jun 11,2021, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 1
+# vsim work.max_test_bench 
+# Start time: 00:34:44 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(27)
+#    Time: 300 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 27
+do do-files/max.do
+# End time: 00:34:59 on Jun 11,2021, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 1
+# vsim work.max_test_bench 
+# Start time: 00:34:59 on Jun 11,2021
+# Loading sv_std.std
+# Loading work.max_test_bench
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv(27)
+#    Time: 300 ps  Iteration: 0  Instance: /max_test_bench
+# Break in Module max_test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv line 27
+# End time: 00:35:27 on Jun 11,2021, Elapsed time: 0:00:28
 # Errors: 0, Warnings: 1

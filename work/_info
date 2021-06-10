@@ -10,7 +10,7 @@ cModel Technology
 d/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/AhmedAttia_Sec1_BN4_AbdAllahZaher_Sec2_BN3
 vFC
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1622418271
+Z1 !s110 1623364369
 !i10b 1
 !s100 0Xa4]m`k517PX?W:3i4`K2
 I@Zm^Pa^GBGVkk;<RRWl8A2
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1622418271.000000
+Z5 !s108 1623364369.000000
 !s107 /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.sv|
 !i113 1
@@ -85,7 +85,7 @@ R7
 n@f@c_@l@a@y@e@r2
 vmax
 R0
-!s110 1623353661
+R1
 !i10b 1
 !s100 >QGN4n3c]cEbV4EiDfWeK3
 I>KHX[ID042YekN[T[=B=k3
@@ -93,7 +93,7 @@ R2
 Z8 !s105 Max_sv_unit
 S1
 R3
-w1623353657
+w1623364193
 Z9 8/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv
 Z10 F/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv
 L0 1
@@ -101,9 +101,33 @@ R4
 r1
 !s85 0
 31
-!s108 1623353661.000000
-!s107 /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv|
-Z11 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv|
+R5
+Z11 !s107 /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv|
+!i113 1
+R6
+R7
+vmax_test_bench
+R0
+R1
+!i10b 1
+!s100 ^Ab9UgU>mWT3fCZ38`VUd1
+I;NEn_[oVK7M51[HB;7]TH3
+R2
+!s105 max_test_bench_sv_unit
+S1
+R3
+w1623364334
+8/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv
+F/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/max_test_bench.sv|
 !i113 1
 R6
 R7
@@ -126,8 +150,8 @@ r1
 !s85 0
 31
 !s108 1623353636.000000
-!s107 /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv|
 R11
+R12
 !i113 1
 R6
 R7
