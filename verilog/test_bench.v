@@ -10,10 +10,15 @@ initial begin
  
     Layer1=0;
     Layer2=0;
-    force FC_Module.Layer2_Out[0] = 16'b0;
-    force FC_Module.Layer2_Out[1] = 1'b1;
     max=0;
     #100
+    Layer1=1;
+    #100
+    Layer1=0;
+    Layer2=1;
+    #100
+    Layer1=0;
+    Layer2=0;
     max=1;
     #100
     max=0;

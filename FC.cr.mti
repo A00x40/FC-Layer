@@ -1,9 +1,30 @@
-/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.v {1 {vlog -work work -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.v
+/home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.sv {1 {vlog -work work -sv -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module FC
 
 Top level modules:
 	FC
+
+} {} {}} /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv {1 {vlog -work work -sv -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/Max.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module max
+
+Top level modules:
+	max
+
+} {} {}} /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC1.sv {1 {vlog -work work -sv -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC1.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FC_LAYER
+
+Top level modules:
+	FC_LAYER
+
+} {} {}} /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC2.sv {1 {vlog -work work -sv -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/FC2.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FC_LAYER2
+
+Top level modules:
+	FC_LAYER2
 
 } {} {}} /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v {1 {vlog -work work -stats=none /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

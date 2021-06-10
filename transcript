@@ -1,91 +1,53 @@
 # Loading project FC
-# Compile of FC.v failed with 1 errors.
-# Compile of test_bench.v failed with 4 errors.
-# Compile of test_bench.v was successful.
-# Compile of FC.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.test_bench
-# vsim work.test_bench 
-# Start time: 19:27:30 on May 27,2021
-# Loading work.test_bench
-# Loading work.FC
-add wave -position insertpoint  \
-sim:/test_bench/FC_Module/Layer2_Out
-add wave -position insertpoint  \
-sim:/test_bench/FC_Module/Layer1
-force -freeze sim:/test_bench/FC_Module/Layer1 0 0
-force -freeze sim:/test_bench/FC_Module/Layer2_Out 0 0
-# ** Error: (vsim-4009) Cannot force 'sim:/test_bench/FC_Module/Layer2_Out'.
+# Compile of Max.sv was successful.
+# Compile of Max.sv was successful.
+vsim work.max
+# vsim work.max 
+# Start time: 21:34:37 on Jun 10,2021
+# Loading sv_std.std
+# Loading work.max
+add wave -position end  sim:/max/outing2
+add wave -position end  sim:/max/max
+add wave -position end  sim:/max/temp_reg
+add wave -position end  sim:/max/classified
+force -freeze sim:/max/outing2 4'h1
+# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
 # 
-force -freeze sim:/test_bench/FC_Module/Layer2_Out[0]='b0
-# invalid command name "0"
-force -freeze sim:/test_bench/FC_Module/Layer2_Out[0]='b1
-# invalid command name "0"
-force -freeze sim:/test_bench/FC_Module/Layer2_Out(0)='b1
-# ** Error: (vish-4001) Incorrect number of arguments.
-# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
-force -freeze sim:/test_bench/FC_Module/Layer2_Out(0)=1'b1
-# ** Error: (vish-4001) Incorrect number of arguments.
-# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
-force -freeze sim:/test_bench/FC_Module/Layer2_Out(0)=1'b1
-# ** Error: (vish-4001) Incorrect number of arguments.
-# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
-force -freeze sim:/test_bench/FC_Module/Layer2_Out(0) 1 0
-# ** Error: (vsim-4009) Cannot force 'sim:/test_bench/FC_Module/Layer2_Out(0)'.
+force -freeze sim:/max/outing2 4'h0001
+# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
 # 
-restart -f
-quit -sim
-# End time: 19:32:44 on May 27,2021, Elapsed time: 0:05:14
-# Errors: 7, Warnings: 0
-# Compile of test_bench.v was successful.
-# Compile of FC.v was successful.
-# 2 compiles, 0 failed with no errors.
-do do-files/test_bench.do
-# vsim work.test_bench 
-# Start time: 19:33:01 on May 27,2021
-# Loading work.test_bench
-# Loading work.FC
-# ** Error: (vish-4014) No objects found matching '/test_bench/Layer2_Out'.
-# Error in macro ./do-files/test_bench.do line 13
-# (vish-4014) No objects found matching '/test_bench/Layer2_Out'.
-#     while executing
-# "add wave -position insertpoint  \
-# sim:/test_bench/clk \
-# sim:/test_bench/Layer1 \
-# sim:/test_bench/Layer2 \
-# sim:/test_bench/FC_Module/Layer1_Bias \
-# sim:..."
-quit -sim
-# End time: 19:33:46 on May 27,2021, Elapsed time: 0:00:45
-# Errors: 3, Warnings: 0
-do do-files/test_bench.do
-# vsim work.test_bench 
-# Start time: 19:34:02 on May 27,2021
-# Loading work.test_bench
-# Loading work.FC
+force -freeze sim:/max/outing2 0 4'h0001
+# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
+# 
+force -freeze sim:/max/outing2 0 4'b0001
+# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
+# 
+force -freeze {sim:/max/outing2[8]} 0000000000000000 0
+force -freeze {sim:/max/outing2[9]} 0000000000000001 0
+force -freeze {sim:/max/outing2[0]} 0000000000000001 0
+force -freeze {sim:/max/outing2[1]} 0000000000000001 0
+force -freeze {sim:/max/outing2[2]} 0000000000000001 0
+force -freeze {sim:/max/outing2[3]} 0000000000000001 0
+force -freeze {sim:/max/outing2[4]} 0000000000000001 0
+force -freeze {sim:/max/outing2[5]} 0000000000000001 0
+force -freeze {sim:/max/outing2[6]} 0000000000000001 0
+force -freeze {sim:/max/outing2[7]} 0000000000000001 0
+force -freeze {sim:/max/outing2[7]} 0000000000000004 0
+# Invalid binary digit: 4.
+# ** Error: (vsim-4011) Invalid force value: 0000000000000004 0.
+# 
+force -freeze {sim:/max/outing2[7]} 0000000000000100 0
+run
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# done loading CNN Parameters 
-# 
-# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v(19)
-#    Time: 200 ps  Iteration: 0  Instance: /test_bench
-# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 19
-quit -sim
-# End time: 19:34:44 on May 27,2021, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 1
-# Compile of test_bench.v was successful.
-# Compile of test_bench.v was successful.
-# Compile of FC.v was successful.
-# 2 compiles, 0 failed with no errors.
-do do-files/test_bench.do
-# vsim work.test_bench 
-# Start time: 19:35:50 on May 27,2021
-# Loading work.test_bench
-# Loading work.FC
-# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# done loading CNN Parameters 
-# 
-# ** Note: $stop    : /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v(20)
-#    Time: 200 ps  Iteration: 0  Instance: /test_bench
-# Break in Module test_bench at /home/ahmed/Desktop/Work/University/ThirdYear/Sem2/VLSI/FC-Layer/verilog/test_bench.v line 20
-# End time: 19:36:07 on May 27,2021, Elapsed time: 0:00:17
-# Errors: 0, Warnings: 1
+force -freeze sim:/max/max 1 0
+run
+run
+force -freeze {sim:/max/outing2[8]} 0000000000001100 0
+run
+force -freeze sim:/max/max 0 0
+run
+force -freeze sim:/max/max 1 0
+run
+# Break key hit
+# End time: 21:42:27 on Jun 10,2021, Elapsed time: 0:07:50
+# Errors: 5, Warnings: 1

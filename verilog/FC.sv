@@ -4,18 +4,21 @@ input clk;
 input Layer1 , Layer2, max;
 output reg [3:0] classified;
 
+reg [15:0] Layer1_X [119:0];
+
 reg[15:0] Layer1_Bias[83:0];
 reg[15:0] Layer2_Bias[9:0];
 
 reg[15:0] Layer1_W[10079:0];  // 120 * 84 - 1
 reg[15:0] Layer2_W[839:0];    // 84 * 10 - 1
-reg [15:0] Layer1_X [119:0];
+
 reg [15:0] outing [83:0];
 reg [15:0] outing2 [9:0];
+
 reg[15:0] temp_reg;
 integer c , i;
-initial 
-	begin
+
+initial begin
 
     // load dense 
 	
@@ -30,7 +33,7 @@ initial
     // done loading can prcess now 
     $display("done loading FC Parameters \n");
 
-	end
+end
 
 FC_LAYER FCLAYER1 (.X(Layer1_X),.W(Layer1_W),.B(Layer1_Bias),.Y(outing),.clk(clk),.RST(Layer1));
 FC_LAYER2 FCLAYER2 (.X(outing),.W(Layer2_W),.B(Layer2_Bias),.Y(outing2),.clk(clk),.RST(Layer2));
