@@ -1,53 +1,42 @@
 # Loading project FC
-# Compile of Max.sv was successful.
-# Compile of Max.sv was successful.
-vsim work.max
+# Load canceled
+do do-files/max.do
 # vsim work.max 
-# Start time: 21:34:37 on Jun 10,2021
+# Start time: 23:49:12 on Jun 10,2021
 # Loading sv_std.std
 # Loading work.max
-add wave -position end  sim:/max/outing2
-add wave -position end  sim:/max/max
-add wave -position end  sim:/max/temp_reg
-add wave -position end  sim:/max/classified
-force -freeze sim:/max/outing2 4'h1
-# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
-# 
-force -freeze sim:/max/outing2 4'h0001
-# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
-# 
-force -freeze sim:/max/outing2 0 4'h0001
-# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
-# 
-force -freeze sim:/max/outing2 0 4'b0001
-# ** Error: (vsim-3586) Invalid array dimension specified, either all dimensions not specified or a part select was specified.
-# 
-force -freeze {sim:/max/outing2[8]} 0000000000000000 0
-force -freeze {sim:/max/outing2[9]} 0000000000000001 0
-force -freeze {sim:/max/outing2[0]} 0000000000000001 0
-force -freeze {sim:/max/outing2[1]} 0000000000000001 0
-force -freeze {sim:/max/outing2[2]} 0000000000000001 0
-force -freeze {sim:/max/outing2[3]} 0000000000000001 0
-force -freeze {sim:/max/outing2[4]} 0000000000000001 0
-force -freeze {sim:/max/outing2[5]} 0000000000000001 0
-force -freeze {sim:/max/outing2[6]} 0000000000000001 0
-force -freeze {sim:/max/outing2[7]} 0000000000000001 0
-force -freeze {sim:/max/outing2[7]} 0000000000000004 0
-# Invalid binary digit: 4.
-# ** Error: (vsim-4011) Invalid force value: 0000000000000004 0.
-# 
-force -freeze {sim:/max/outing2[7]} 0000000000000100 0
-run
+force -freeze {sim:/max/outing2[9]} 4'h000a 0
+do do-files/max.do
+# End time: 23:51:26 on Jun 10,2021, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 0
+# vsim work.max 
+# Start time: 23:51:26 on Jun 10,2021
+# Loading sv_std.std
+# Loading work.max
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-force -freeze sim:/max/max 1 0
-run
-run
-force -freeze {sim:/max/outing2[8]} 0000000000001100 0
-run
-force -freeze sim:/max/max 0 0
-run
-force -freeze sim:/max/max 1 0
-run
-# Break key hit
-# End time: 21:42:27 on Jun 10,2021, Elapsed time: 0:07:50
-# Errors: 5, Warnings: 1
+do do-files/max.do
+# End time: 23:51:57 on Jun 10,2021, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 1
+# vsim work.max 
+# Start time: 23:51:57 on Jun 10,2021
+# Loading sv_std.std
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do do-files/max.do
+# End time: 23:52:47 on Jun 10,2021, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 1
+# vsim work.max 
+# Start time: 23:52:47 on Jun 10,2021
+# Loading sv_std.std
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+do do-files/max.do
+# End time: 23:53:17 on Jun 10,2021, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1
+# vsim work.max 
+# Start time: 23:53:17 on Jun 10,2021
+# Loading sv_std.std
+# Loading work.max
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 23:56:25 on Jun 10,2021, Elapsed time: 0:03:08
+# Errors: 0, Warnings: 1
